@@ -1,0 +1,11 @@
+<ul class="side-nav">
+  <li>
+    <p>Hello {{userName}}</p>
+  </li>
+  <li *ngFor="let menu of sideNav">
+    <a [routerLink]="menu.path">{{menu.title}}</a>
+  </li>
+  <li class="logout-li">
+    <button (click)="exit()">Logout</button>
+  </li>
+</ul>

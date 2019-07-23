@@ -1,0 +1,16 @@
+<app-search-layout>
+  <app-search-box
+   [query]="searchQuery$ | async"
+   [loading]="loading$ | async"
+   (search)="search($event)">
+  </app-search-box>
+
+  <app-collection-list>
+      <app-book-card
+        [book]="item"
+        (addBook)="addBook($event)"
+        *ngFor="let item of books$ | async">
+      </app-book-card>
+  </app-collection-list
+>
+</app-search-layout>

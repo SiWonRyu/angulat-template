@@ -1,0 +1,21 @@
+<div class="book-wrap">
+  <div class="btn-wrap">
+    <button *ngIf="isSearch" (click)="add()">추가</button>
+    <button *ngIf="!isSearch" (click)="remove()" class="remove">삭제</button>
+  </div>
+  <div class="title-wrap">
+    <div class="title">
+      {{ title }}
+      <p *ngIf="subtitle">{{ subtitle }}</p>
+    </div>
+    <img [src]="thumbnail" alt="Preview Image">
+  </div>
+
+  <div class="sub-wrap">
+    <p>{{ description }}</p>
+  </div>
+
+  <div class="write-wrap">
+    <span *ngFor="let author of authors">{{ author }}</span>
+  </div>
+</div>

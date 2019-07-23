@@ -1,0 +1,35 @@
+.form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  height: 100%;
+}
+
+.submit-wrap {
+  text-align: center;
+
+  button {
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+}
+
+form > div {
+  padding: 20px;
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+
+  input {
+    padding: 5px;
+  }
+}
+
+.error {
+  text-align: center;
+}

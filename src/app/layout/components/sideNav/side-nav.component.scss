@@ -1,0 +1,39 @@
+.side-nav {
+  width: 300px;
+  height: calc(100% + 60px);
+  border-right: 1px solid rgba(0,0,0,0.14);
+  overflow: hidden;
+  position: fixed;
+  margin-top: 0px;
+  left: 0;
+  top: 0;
+
+  .logout-li {
+    margin-top: 20px;
+  }
+
+  li {
+    list-style-type: none;
+    line-height: 44px;
+    cursor: pointer;
+
+    a {
+      font-size: 16px;
+      line-height: 44px;
+      height: 44px;
+    }
+
+    .active {
+      background-color: rgba(50,50,50,0.06);
+    }
+
+    button {
+      width: 200px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+  }
+
+}

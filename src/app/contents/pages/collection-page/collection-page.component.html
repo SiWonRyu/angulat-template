@@ -1,0 +1,8 @@
+<app-collection-list>
+  <app-book-card
+   [book]="item"
+   [isSearch]="false"
+   (removeBook)="remove($event)"
+   *ngFor="let item of bookCollection$ | async">
+  </app-book-card>
+</app-collection-list>

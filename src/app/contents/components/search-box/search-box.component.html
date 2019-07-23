@@ -1,0 +1,8 @@
+<p>Type Book Name</p>
+<input type="text" 
+       class="search-input"
+       [value]="query"
+       (keyup)="search.emit($event.target.value)" >
+
+<span class="loading-text"
+      *ngIf="loading">검색 중...</span>

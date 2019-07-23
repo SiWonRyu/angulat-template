@@ -1,0 +1,18 @@
+<div class="form-wrap">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div>
+      <label for="userId">ID</label>
+      <input type="text" formControlName="username" id="userId" />
+    </div>
+    <div>
+      <label for="userPass">PASSWORD</label>
+      <input type="password" formControlName="password" id="userPass" />
+    </div>
+    <div class="submit-wrap">
+      <button>LOGIN</button>
+    </div>
+    <div class="error">
+      <p>{{errorMessage}}</p>
+    </div>
+  </form>
+</div>

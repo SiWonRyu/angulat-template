@@ -1,0 +1,82 @@
+.book-wrap {
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+.title-wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+
+  .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    line-height: 1.2;
+    height: 2.4em;
+
+    word-wrap:break-word;
+    display: block;
+    text-align: left;
+
+    p {
+      font-size: 14px;
+      display: block;
+      color: rgba(0,0,0,.54);
+    }
+  }
+
+  img {
+    width: 60px;
+    min-width: 60px;
+    height: 80px;
+    margin-left: 5px;
+  } 
+}
+
+.sub-wrap {
+  margin: 15px 0;
+  font-size: 14px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.write-wrap {
+  margin-top: 20px;
+  font-weight: bold;
+
+  span {
+    margin-right: 10px;
+  }
+}
+.btn-wrap {
+  margin-bottom: 20px;
+  text-align: center;
+
+  button {
+    font-size: 14px;
+    width: 50px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .remove {
+    background-color: red;
+    color: white;
+  }
+}
+
+:host { display: inline-block; }
